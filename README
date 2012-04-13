@@ -4,3 +4,7 @@ Usage:
 
 var imageManage = new imageManager();
 		imageManage.init();
+
+Also :
+
+Use the mobile detection with - imagemanage.isMobile() - Returns true/false
