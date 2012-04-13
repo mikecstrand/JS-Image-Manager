@@ -7,11 +7,11 @@ var imageManager = function(){
 				
 		$('img[desktop]').each(function(){
 			
-			var desktopAtrr = $(this).attr('desktop');
+			var desktopAttr = $(this).attr('desktop');
 			
-				if(typeof desktopAtr !== 'undefined' && desktopAtr !== false){
+				if(typeof desktopAttr !== 'undefined' && desktopAttr !== false){
 				
-					$(this).attr('src', desktopAtrr);
+					$(this).attr('src', desktopAttr);
 			
 				}
 				
