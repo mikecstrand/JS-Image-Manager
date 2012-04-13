@@ -4,11 +4,17 @@ var imageManager = function(){
 	var isMobile = (screen.width < 750 || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) ? true : false;
 
 	function switchImages(){
-	
+				
 		$('img[desktop]').each(function(){
-		
-			$(this).attr('src', $(this).attr('desktop'));
 			
+			var desktopAtrr = $(this).attr('desktop');
+			
+				if(typeof desktopAtr !== 'undefined' && desktopAtr !== false){
+				
+					$(this).attr('src', desktopAtrr);
+			
+				}
+				
 		});
 	
 	}
